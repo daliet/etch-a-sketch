@@ -1,0 +1,18 @@
+body{
+    min-height:100vh;
+    margin:auto;
+    width:50%;
+    background-color: red;;
+}
+
+#container{
+   
+    display:grid;
+    background-color: white;
+    border: 2px solid black;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);    
+    height: 650px;
+    width: 650px;
+    margin: 50px 0 0 50px;
+}
