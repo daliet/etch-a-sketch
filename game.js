@@ -1,11 +1,16 @@
 const container =  document.querySelector('#container');
-
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () =>
+addGrid());
 
 function addGrid(){  
 
-  let content = document.createElement('div');
+let input = prompt("Please enter the number of squares per side");
+container.style.cssText = 'grid-template-rows: repeat('+input+' , 1fr); grid-template-columns: repeat('+input+', 1fr)';
+
+let content = document.createElement('div');
  
- for (let i = 0; i <= 256; i++){// 16x16 = 256 grid of square divs
+ for (let i = 0; i <= input * input; i++){
   
     content = document.createElement('div'); 
     content.classList.add('square');
@@ -27,5 +32,3 @@ function addGrid(){
     }
     return content; 
   }  
-
-  addGrid();
