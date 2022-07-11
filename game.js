@@ -1,8 +1,14 @@
 const container =  document.querySelector('#container');
 const btn = document.querySelector('#btn');
 
-btn.addEventListener('click', () =>
-addGrid());
+btn.addEventListener('click', playGame);
+
+function resetGame(){
+    let squares = container.querySelectorAll('.square')
+    squares.forEach(square =>{square.style.backgroundColor = 'white';
+  })
+}
+
 
 function addColor(){
 
@@ -37,5 +43,10 @@ function addGrid(){
         content.classList.add('square');
         container.appendChild(content);        
     }
-        addColor(); 
 }  
+
+function playGame(){
+  resetGame();
+  addGrid();
+  addColor();
+}
