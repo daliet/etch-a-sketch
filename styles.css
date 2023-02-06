@@ -1,0 +1,38 @@
+body {
+    position: relative;
+    max-height:100vh;
+    margin:auto;
+    width:50%;
+    background-color: #8b608b;
+}
+
+#container {
+    display:grid;
+    background-color: white;
+    border: 5px solid black;
+    height: 65vh;
+    width: 40vw;
+    margin: 50px 0 0 50px;
+    border-radius: 8px;
+}
+
+#play-btn,  #reset-btn{
+    position: absolute;
+    margin-top: 15px;
+    padding: .75rem;
+    width: 100px;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#play-btn {
+    top: 100%;
+    left: 7%;
+}
+
+#reset-btn {
+    top: 100%;
+    left: 74%;
+}
